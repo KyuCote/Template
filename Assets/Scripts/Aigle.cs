@@ -16,10 +16,10 @@ public class Aigle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        BougeAigle();
     }
 
     void BougeAigle(){
-        _rb.velocity = 5;
+        _rb.velocity = Vector3.forward;
     }
 }
