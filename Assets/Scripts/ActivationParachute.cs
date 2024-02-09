@@ -21,11 +21,10 @@ public class ActivationParachute : MonoBehaviour
 
     
     void OnTriggerEnter(Collider other){
-        
-        Debug.Log(other.gameObject.tag);
 
-        if(other.gameObject.tag == "ZoneMort"){
-
+        if(other.gameObject.tag == _zoneDanger.gameObject.tag){
+            
+            _parachute.SetActive(true);
         }
     }
 }
