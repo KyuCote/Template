@@ -3288,7 +3288,7 @@ PrefabInstance:
     - target: {fileID: 2692594753747960194, guid: 9843f84f57901b24989015eec2c123ac,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00999999
+      value: -7.84
       objectReference: {fileID: 0}
     - target: {fileID: 2692594753747960194, guid: 9843f84f57901b24989015eec2c123ac,
         type: 3}
@@ -6002,7 +6002,7 @@ Rigidbody:
   m_GameObject: {fileID: 976073851}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 6
+  m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -9409,7 +9409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585964903}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.76, y: 66.39, z: 4}
+  m_LocalPosition: {x: 27.76, y: 66.39, z: 11.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

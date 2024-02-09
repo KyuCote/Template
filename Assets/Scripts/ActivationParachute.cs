@@ -26,8 +26,7 @@ public class ActivationParachute : MonoBehaviour
 
         if(other.gameObject.tag == _zoneDanger.gameObject.tag){
             _parachute.SetActive(true);
-            _rb.drag +=1;
-            _rb.useGravity = false;
+            _rb.drag = 10;
         }
     }
 }
