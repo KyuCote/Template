@@ -8,9 +8,11 @@ public class ActivationParachute : MonoBehaviour
 
     [SerializeField] private GameObject _zoneDanger;
     [SerializeField] private GameObject _parachute;
+
+    private Rigidbody _rb;
     void Start()
     {
-        
+        _rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -23,8 +25,9 @@ public class ActivationParachute : MonoBehaviour
     void OnTriggerEnter(Collider other){
 
         if(other.gameObject.tag == _zoneDanger.gameObject.tag){
-            
             _parachute.SetActive(true);
+            _rb.drag +=1;
+            _rb.useGravity = false;
         }
     }
 }
