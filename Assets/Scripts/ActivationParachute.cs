@@ -13,6 +13,7 @@ public class ActivationParachute : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
+        BougeMouton();
     }
 
     // Update is called once per frame
@@ -20,13 +21,23 @@ public class ActivationParachute : MonoBehaviour
     {
         
     }
-
     
-    void OnTriggerEnter(Collider other){
+    void BougeMouton()
+    {
+        _rb.AddForce(Vector3.forward * 50,ForceMode.Impulse);
+    }
 
-        if(other.gameObject.tag == _zoneDanger.gameObject.tag){
-            _parachute.SetActive(true);
-            _rb.drag = 10;
+    private void OnTriggerEnter(Collider other){
+
+        if(other.transform.tag == _zoneDanger.transform.tag)
+        {
+            OuvreParachute();
         }
+    }
+
+    void OuvreParachute()
+    {
+        _parachute.SetActive(true);
+        _rb.drag = 10;
     }
 }
